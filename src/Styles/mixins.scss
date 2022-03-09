@@ -1,0 +1,6 @@
+@import './variables.scss';
+@mixin section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: $max-width;
+}

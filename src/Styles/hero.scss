@@ -1,0 +1,65 @@
+@import './variables.scss';
+.hero {
+  &-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-center {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+  &-info {
+    background: #f3e6e6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .shop-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .shop {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+    .sale {
+      max-width: 20rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    @media screen and(min-width:800) {
+      .sale {
+        max-width: 30rem;
+        margin: 0 auto;
+      }
+    }
+    .hero-btn {
+      background: #e0b8b8;
+      cursor: pointer;
+      padding: 0.5rem 2.5rem;
+      border-radius: 20px;
+      border: none;
+      font-weight: bolder;
+    }
+  }
+}
+@media screen and(min-width:768px) {
+  .img-section {
+    display: none;
+  }
+  .hero-img {
+    position: relative;
+    background: url('../Assets/hero.webp') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+  }
+  .hero-info {
+    background: transparent;
+    flex-grow: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

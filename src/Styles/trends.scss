@@ -1,0 +1,20 @@
+@import './mixins.scss';
+.trends {
+  @include section-center;
+  background: #0a193c;
+  padding: 1rem;
+  color: #fff;
+
+  h3 {
+    text-align: center;
+  }
+  &-center {
+    padding: 1rem 2rem;
+  }
+  @media screen and (min-width: 800px) {
+    .trends-center {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}

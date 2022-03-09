@@ -1,0 +1,16 @@
+@import './mixins.scss';
+
+.news {
+  @include section-center;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1rem 3rem;
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .news-center {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
+}

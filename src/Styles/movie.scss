@@ -1,0 +1,22 @@
+.movie {
+  background: #fff;
+  &-info {
+    padding: 1rem;
+    text-align: center;
+  }
+  &-name {
+    font-style: italic;
+  }
+  &-exp {
+    max-width: 18rem;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  &-btn {
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    border-bottom: 2px solid #000;
+  }
+}

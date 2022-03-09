@@ -1,0 +1,22 @@
+.trend {
+  text-align: center;
+  img {
+    margin-bottom: 1rem;
+  }
+  &-name {
+    display: inline-block;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  &-exp {
+    font-size: 0.8rem;
+  }
+  &-btn {
+    font-size: 0.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}
