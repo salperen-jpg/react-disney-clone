@@ -9,11 +9,13 @@ import Vacations from './Vacation/Vacations';
 import LastHero from './LastHero';
 import Credit from './Credit';
 import Footer from './Footer';
+import Submenu from './Submenu';
 
 const Home = () => {
   return (
     <>
       <Navbar></Navbar>
+      <Submenu />
       <UnderNav />
       <Hero />
       <Movies />

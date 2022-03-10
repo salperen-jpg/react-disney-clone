@@ -2,10 +2,12 @@ import React from 'react';
 import hero from '../Assets/hero.webp';
 import logo from '../Assets/logo.png';
 import '../Styles/hero.scss';
+import { useDisneyContext } from '../context';
 
 const Hero = () => {
+  const { closeSubmenu } = useDisneyContext();
   return (
-    <article className='hero'>
+    <article className='hero' onMouseOver={closeSubmenu}>
       <div className='section-center hero-img'>
         <div className='img-section'>
           <img src={hero} alt='' />

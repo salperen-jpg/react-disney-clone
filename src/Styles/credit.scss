@@ -3,6 +3,7 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem;
+  transition: all 0.2s linear;
 
   .credit-info {
     text-align: center;
@@ -29,6 +30,10 @@
     }
   }
 }
+
+.credit:hover .credit-img {
+  transform: scale(1.02);
+}
 @media screen and (min-width: 800px) {
   .credit-center {
     display: flex;
@@ -44,5 +49,6 @@
   }
   .credit-center img {
     height: 25rem;
+    object-fit: cover;
   }
 }

@@ -4,7 +4,6 @@ import Movie from './Movie';
 import '../../Styles/movies.scss';
 
 const Movies = () => {
-  console.log(movies);
   return (
     <section className='movies'>
       <div className='movies-center'>

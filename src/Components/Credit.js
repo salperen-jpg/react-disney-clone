@@ -7,7 +7,7 @@ const Credit = () => {
     <article className='credit'>
       <div className='credit-center'>
         <div className='credit-img-container'>
-          <img src={credit} alt='credit' />
+          <img className='credit-img' src={credit} alt='credit' />
         </div>
         <div className='credit-info'>
           <div>
