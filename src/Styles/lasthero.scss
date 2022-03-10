@@ -1,0 +1,50 @@
+.last-hero {
+  position: relative;
+  width: 100%;
+
+  padding: 1rem;
+  background: url('../Assets/lastimg.webp') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  cursor: pointer;
+
+  img {
+    width: 15rem;
+    margin-bottom: 0.5rem;
+  }
+  .last-title {
+    font-size: 0.8rem;
+  }
+  .last-link {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #a5ccf1;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .last-link:hover {
+    text-decoration: underline;
+  }
+  .last-exp {
+    font-size: 0.7rem;
+  }
+}
+.last-hero:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (min-width: 800px) {
+  .last-hero {
+    height: 40vh;
+  }
+  .last-hero-info {
+    transform: translateY(-50%);
+  }
+}

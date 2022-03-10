@@ -1,0 +1,48 @@
+.credit {
+  background: rgba(0, 0, 0, 0.1);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  .credit-info {
+    text-align: center;
+    padding-bottom: 1rem;
+    .credit-title {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .credit-earn {
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .credit-btn {
+      display: block;
+      color: #000;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+    .apply {
+      font-size: 0.6rem;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .credit-center {
+    display: flex;
+    gap: 1rem;
+  }
+  .credit-img-container {
+    flex: 0 0 50%;
+  }
+  .credit-info {
+    flex: 0 0 50%;
+    display: grid;
+    place-items: center;
+  }
+  .credit-center img {
+    height: 25rem;
+  }
+}

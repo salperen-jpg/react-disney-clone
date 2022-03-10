@@ -1,0 +1,28 @@
+.vacation {
+  text-align: center;
+  background: #fff;
+  padding-bottom: 2rem;
+  img {
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  &-name {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  &-exp {
+    font-size: 0.8rem;
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  &-btn {
+    font-size: 0.7rem;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}

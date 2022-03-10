@@ -4,6 +4,7 @@ const DisneyContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   const toggleSidebar = () => {
     if (isSidebarOpen) {
