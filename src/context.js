@@ -1,13 +1,25 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { sublinks } from './Components/Sublinks';
+import { awardsMovie } from './Components/AcademyAward/data';
+import pagination from './Components/Utils/pagination';
 
 const DisneyContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
+  // SUBMENU STATES
   const [location, setLocation] = useState({});
   const [page, setPage] = useState({ page: '', links: [] });
+  // MOVIE PAGINATION STATES
+  const [awards, setAwards] = useState(awardsMovie);
+  const [displayAwards, setDisplayAwards] = useState([]);
+  const [pageForPagination, setPageForPagination] = useState(0);
+  const [totalPage, setTotalPage] = useState(pagination(awards));
+
+  useEffect(() => {
+    setDisplayAwards(pagination(awards)[pageForPagination]);
+  }, [pageForPagination]);
 
   const toggleSidebar = () => {
     if (isSidebarOpen) {
@@ -31,6 +43,10 @@ export const AppProvider = ({ children }) => {
   const closeSubmenu = () => {
     setIsSubmenuOpen(false);
   };
+
+  const handlePage = (pageNumber) => {
+    setPageForPagination(pageNumber);
+  };
   return (
     <DisneyContext.Provider
       value={{
@@ -41,6 +57,10 @@ export const AppProvider = ({ children }) => {
         closeSubmenu,
         location,
         page,
+        displayAwards,
+        pageForPagination,
+        totalPage,
+        handlePage,
       }}
     >
       {children}

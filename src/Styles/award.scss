@@ -1,0 +1,15 @@
+.award {
+  transition: all 0.3s linear;
+  img {
+    border-radius: 5px;
+    min-height: 20rem;
+    object-fit: cover;
+  }
+  span {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+  }
+}

@@ -9,7 +9,7 @@ const Submenu = () => {
     const submenu = container.current;
     const { center, bottom } = location;
     submenu.style.left = `${center}px`;
-    submenu.style.top = `64px`;
+    submenu.style.top = `48px`;
   }, [location]);
 
   return (

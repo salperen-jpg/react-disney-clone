@@ -1,0 +1,71 @@
+@import './mixins.scss';
+@import './mixins.scss';
+.awards {
+  @include section-center;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem;
+  color: #000;
+
+  h3 {
+    text-align: center;
+  }
+  &-center {
+    padding: 1rem 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    transition: all 0.3 linear;
+  }
+}
+
+.awards-container {
+  position: relative;
+  transition: all 0.3 linear;
+}
+.award-btn-container {
+  display: none;
+  transition: all 0.3 linear;
+  .right-btn {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-100%, -100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    z-index: 2;
+    background: #fff;
+  }
+  .left-btn {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(100%, -100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    z-index: 2;
+    background: #fff;
+  }
+  button:hover {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .award-btn-container {
+    display: block;
+  }
+}

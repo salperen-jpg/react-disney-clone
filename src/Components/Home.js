@@ -10,6 +10,8 @@ import LastHero from './LastHero';
 import Credit from './Credit';
 import Footer from './Footer';
 import Submenu from './Submenu';
+import Awards from './AcademyAward/Awards';
+import Womens from './WomensDay/Womens';
 
 const Home = () => {
   return (
@@ -21,6 +23,8 @@ const Home = () => {
       <Movies />
       <News />
       <Trends />
+      <Awards />
+      <Womens />
       <Vacations />
       <LastHero />
       <Credit />
