@@ -1,0 +1,33 @@
+.sidebar {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  background: rgba(0, 0, 0, 0.3);
+}
+.sidebar ul {
+  border-top: 1px solid black;
+  background: #fff;
+  li {
+    padding: 1rem 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  a {
+    text-transform: uppercase;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+}
+
+.show {
+  transform: translate(0);
+}
+
+@media screen and (min-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}

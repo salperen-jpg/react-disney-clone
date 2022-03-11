@@ -12,6 +12,7 @@ import Footer from './Footer';
 import Submenu from './Submenu';
 import Awards from './AcademyAward/Awards';
 import Womens from './WomensDay/Womens';
+import Sidebar from './Sidebar';
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
       <LastHero />
       <Credit />
       <Footer />
+      <Sidebar />
     </>
   );
 };
